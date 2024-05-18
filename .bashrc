@@ -128,14 +128,18 @@ sudo() {
     command sudo "$@"
   fi
 }
+
+#Go
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+#Neovim
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-
+#Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+# Oh My Posh
 eval "$(oh-my-posh init bash --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/tokyo.omp.json)"
 
